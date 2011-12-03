@@ -144,8 +144,8 @@ ${COMPILER}:
 ${COMPILER}/usb_dev_serial.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/usb_dev_serial.axf: ${COMPILER}/usb_dev_serial.o
 ${COMPILER}/usb_dev_serial.axf: ${COMPILER}/usb_serial_structs.o
-${COMPILER}/usb_dev_serial.axf: ${ROOT}/usblib/${COMPILER}/libusb.a
-${COMPILER}/usb_dev_serial.axf: ${ROOT}/driverlib/${COMPILER}/libdriver.a
+${COMPILER}/usb_dev_serial.axf: ${ROOT}/usblib/${COMPILER}-cm3/libusb-cm3.a
+${COMPILER}/usb_dev_serial.axf: ${ROOT}/driverlib/${COMPILER}-cm3/libdriver-cm3.a
 ${COMPILER}/usb_dev_serial.axf: $(LINKER)
 SCATTERgcc_usb_dev_serial=$(LINKER)
 ENTRY_usb_dev_serial=ResetISR

@@ -151,8 +151,8 @@ ${COMPILER}/usb_host_msc.axf: ${COMPILER}/ff.o
 ${COMPILER}/usb_host_msc.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/usb_host_msc.axf: ${COMPILER}/uartstdio.o
 ${COMPILER}/usb_host_msc.axf: ${COMPILER}/usb_host_msc.o
-${COMPILER}/usb_host_msc.axf: ${ROOT}/usblib/${COMPILER}/libusb.a
-${COMPILER}/usb_host_msc.axf: ${ROOT}/driverlib/${COMPILER}/libdriver.a
+${COMPILER}/usb_host_msc.axf: ${ROOT}/usblib/${COMPILER}-cm3/libusb-cm3.a
+${COMPILER}/usb_host_msc.axf: ${ROOT}/driverlib/${COMPILER}-cm3/libdriver-cm3.a
 ${COMPILER}/usb_host_msc.axf: $(LINKER)
 SCATTERgcc_usb_host_msc=$(LINKER)
 ENTRY_usb_host_msc=ResetISR

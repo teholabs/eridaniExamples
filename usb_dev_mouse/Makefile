@@ -144,8 +144,8 @@ ${COMPILER}/usb_dev_mouse.axf: ${COMPILER}/startup_${COMPILER}.o
 ${COMPILER}/usb_dev_mouse.axf: ${COMPILER}/uartstdio.o
 ${COMPILER}/usb_dev_mouse.axf: ${COMPILER}/usb_dev_mouse.o
 ${COMPILER}/usb_dev_mouse.axf: ${COMPILER}/usb_mouse_structs.o
-${COMPILER}/usb_dev_mouse.axf: ${ROOT}/usblib/${COMPILER}/libusb.a
-${COMPILER}/usb_dev_mouse.axf: ${ROOT}/driverlib/${COMPILER}/libdriver.a
+${COMPILER}/usb_dev_mouse.axf: ${ROOT}/usblib/${COMPILER}-cm3/libusb-cm3.a
+${COMPILER}/usb_dev_mouse.axf: ${ROOT}/driverlib/${COMPILER}-cm3/libdriver-cm3.a
 ${COMPILER}/usb_dev_mouse.axf: $(LINKER)
 SCATTERgcc_usb_dev_mouse=$(LINKER)
 ENTRY_usb_dev_mouse=ResetISR

@@ -63,7 +63,7 @@ ODFLAGS	= -D
 
 SOURCES = \
 	$(NAME).c startup_gcc.c\
-	$(DIR_DRIVERLIB)/gcc/libdriver.a\
+	$(DIR_DRIVERLIB)/gcc-cm3/libdriver-cm3.a\
 
 all: reg
 
