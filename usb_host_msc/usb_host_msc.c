@@ -1320,8 +1320,6 @@ main(void)
     // Enable the UART.
     //
     SysCtlPeripheralEnable(SYSCTL_PERIPH_GPIOA);
-    GPIOPinConfigure(GPIO_PA0_U0RX);
-    GPIOPinConfigure(GPIO_PA1_U0TX);
     GPIOPinTypeUART(GPIO_PORTA_BASE, GPIO_PIN_0 | GPIO_PIN_1);
     UARTStdioInit(0);
     UARTprintf("\n\nUSB Mass Storage Host program\n");
@@ -1355,7 +1353,7 @@ main(void)
 
 
     //GPIOPinConfigure(GPIO_PC5_USB0EPEN);
-    GPIOPinConfigure(GPIO_PC6_USB0PFLT);
+    //GPIOPinConfigure(GPIO_PC6_USB0PFLT);
     //GPIOPinTypeUSBDigital(GPIO_PORTC_BASE, GPIO_PIN_5 | GPIO_PIN_6);
     GPIOPinTypeUSBDigital(GPIO_PORTC_BASE, GPIO_PIN_6);
 
