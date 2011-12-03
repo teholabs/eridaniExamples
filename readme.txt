@@ -4,6 +4,7 @@ teho Labs 7/2011
 Please see http://teholabs.com/docs/eridani:examples for documentation
 
 Change Log:
+1.2: update to match StellarisWare 8264 
 
 1.1:
 Moved makefile settings to makefilesettings in root of examples simplifying toolchain selection
