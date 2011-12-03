@@ -1,5 +1,4 @@
 Eridani Examples V1.10
-teho Labs 7/2011
 
 Please see http://teholabs.com/docs/eridani:examples for documentation
 
